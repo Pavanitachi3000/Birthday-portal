@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎂 Birthday Wishing App
 
 A beautiful, interactive birthday surprise app that reveals a personalised wish when a matching name is entered.
@@ -69,3 +70,6 @@ No server, no backend, no dependencies beyond an internet connection (for Google
 ---
 
 Enjoy celebrating the special people in your life! 🎉
+=======
+# Birthday-portal
+>>>>>>> 108632c0d61f5505d0ec4a298cb531402c604de5
