@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Wishes 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div class="screen" id="loginScreen">
+    <div class="login-card">
+      <div class="cake-icon">🎂</div>
+      <h1 class="brand">Secret Birthday Portal</h1>
+      <p class="subtitle">Enter a name to unlock a birthday surprise</p>
+      <div class="input-wrap">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Type a name…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="unlockBtn" onclick="checkName()">✨ Open</button>
+      </div>
+      <p class="hint" id="hintMsg"></p>
+    </div>
+    <div class="floating-bg">
+      <span>🎈</span><span>🎉</span><span>⭐</span>
+      <span>🎊</span><span>💫</span><span>🎁</span>
+      <span>🌟</span><span>🎈</span><span>✨</span>
+    </div>
+  </div>
+
+  <!-- WISH SCREEN -->
+  <div class="screen hidden" id="wishScreen">
+    <canvas id="confettiCanvas"></canvas>
+
+    <div class="wish-content">
+      <div class="cake-big" id="cakeAnim">🎂</div>
+      <h1 class="wish-name" id="wishName">Happy Birthday!</h1>
+      <p class="wish-message" id="wishMessage"></p>
+
+      <div class="candles" id="candlesRow"></div>
+
+      </div>
+
+      <button class="back-btn" onclick="goBack()">← Try Another Name</button>
+    </div>
+  </div>
+
+  <!-- MANAGE SCREEN link -->
+  <a href="manage.html" class="manage-link" title="Manage Names">⚙️</a>
+
+  <script src="app.js"></script>
+</body>
+</html>
